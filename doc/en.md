@@ -20,9 +20,11 @@
 
 ## How does the bot work
 
-Robot vydělává na rozdílech mezi nákupní a prodejní cenou obchodovaného assetu (třeba bitcoin). Vždy tedy nakupuje za nižší cenu, než je cena posledního obchodu, a prodává za cenu vyšší. Rozdíly v ceně mohou být malé a tedy i malé zisky, robot však provádí mnoho obchodů a tak se malé zisky mohou nasčítat ve větší zisky
+The bot generates profit based on the difference of the traded asset's (e.g. Bitcoin) buy- and sell-price. It buys for the lower price than the last trade's price, and sells for higher price. The buy-/sell-price differences may not be high, therefore the profits may also be small. However the bot conducts a significant amount of trades, so that small profits sum into a bigger profit.
 
-**Nejedná se o HFT** Robot neobchoduje na MARKET. Naopak pouze dodává likviditu na burzu pomocí vhodného umístění LIMITních příkazů do orderbooku. Výkon robota a počet obchodů tak závisí na ostatních účastnících trhu, kteří tam nakupují a prodávají. Vhodným protějškem jsou také arbitrážní roboti, kteří jsou schopni zobchodovat limitní příkazy při reakci na pohyb na jiné burze.
+**It is not a HFT** The bot does not trade at MARKET price. In fact it just generates liquidity by appropriate placing of LIMIT orders into an orderbook. Therefore, the overall performance and amount of trades the bot generates, depends on other market participants as well. Its' suitable counterparts are arbitrage-bots trading limit orders based on price changes on different markets.
+
+======================================================================
 
 ## Na jakém trhu robot funguje nejlépe?
 
